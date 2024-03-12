@@ -1,0 +1,102 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: grey;
+    text-align: left;
+    color: whitesmoke;
+    margin: 0;
+    padding: 12px 32px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    /* Center horizontally */
+}
+
+#employeeList {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#employeeList td,
+#employeeList th {
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+#employeeList tr:nth-child(even) {
+    background-color: #979797;
+}
+
+#employeeList tr:hover {
+    background-color: #979797;
+}
+
+#employeeList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(230, 231, 216);
+}
+
+#annSalTableData {
+    text-align: right;
+}
+
+#employeeList td {
+    background-color: white;
+}
+
+input[type=text],
+input[type=number],
+select {
+    width: 15%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    /* border: 1px solid #ccc; */
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    background-color: lightgray;
+    font-size: large;
+    padding: 5px 30px;
+    margin: 5px 0;
+    margin-left: 798px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: grey;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+footer {
+    text-align: right;
+    padding: 20px 0px;
+    font-size: 25px;
+}
+
+.over-budget {
+    background-color: red;
+}

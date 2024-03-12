@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Salary Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Salary Calculator</h1>
+    <h1>Employee Salary Calculator</h1>
   </header>
   <main>
+    <div id="content">
     <h2>Add Employee</h2>
+    <form id="employeeForm">
+        <!-- Need inputs for employee information -->
+        <input type="text" id="firstName" data-testid="firstNameInput" placeholder="First Name">
+        <input type="text" id="lastName" data-testid="lastNameInput" placeholder="Last Name">
+        <input type="text" id="idNumber" data-testid="idInput" placeholder="ID Number">
+        <input type="text" id="jobTitle" data-testid="titleInput" placeholder="Job Title">
+        <input type="number" id="annualSalary" data-testid="annualSalaryInput" placeholder="Annual Salary">
+        <br>
+        <button type="submit" data-testid="submitButton">Submit</button>
+    </form>
     <h2>Employees</h2>
-  </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
+    <table id="employeeList">
+        <!-- Table headers -->
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID Number</th>
+                <th>Job Title</th>
+                <th>Annual Salary</th>
+                <th>Delete Row</th>
+            </tr>
+        </thead>
+        <tbody id="employeeData">
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer id="totalCost">
+        Total Monthly Cost: $<span id="monthlyCost">0.00</span>
+    </footer>
+    </div>
+
+    <script src="client.js"></script>
 </body>
 </html>
